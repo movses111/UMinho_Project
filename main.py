@@ -1,49 +1,17 @@
------BEGIN OPENSSH PRIVATE KEY-----
-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
------END OPENSSH PRIVATE KEY-----
+from monitor.ping import ping_host
+from monitor.port_check import check_port
+from monitor.logger import log
+
+host = input("Enter IP: ")
+
+if ping_host(host):
+    print("Ping: OK")
+    log(f"{host} is alive")
+else:
+    print("Ping: FAILED")
+    log(f"{host} is down")
+
+for port in [22, 80, 443]:
+    status = check_port(host, port)
+    print(f"Port {port}: {'OPEN' if status else 'CLOSED'}")
+    log(f"{host}:{port} -> {'OPEN' if status else 'CLOSED'}")
