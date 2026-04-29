@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "alias": "google-dns",
+        "ip": "8.8.8.8",
+        "check_interval": 10,
+        "latency_threshold": 100
+
+    },
+    {
+       "id": 2,
+        "alias": "cloudflare-dns",
+        "ip": "1.1.1.1",
+        "check_interval": 5,
+        "latency_threshold": 80 
+    },
+    {
+        "id": 3,
+        "alias": "local-router",
+        "ip": "192.168.1.1",
+        "check_interval": 15,
+        "latency_threshold": 30
+    }
+]
