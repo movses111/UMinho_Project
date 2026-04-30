@@ -27,3 +27,51 @@ quad9-dns (9.9.9.9) is alive
 quad9-dns (9.9.9.9) port 22 -> CLOSED
 quad9-dns (9.9.9.9) port 80 -> CLOSED
 quad9-dns (9.9.9.9) port 443 -> OPEN
+google-dns (8.8.8.8) is alive
+google-dns (8.8.8.8) port 22 -> CLOSED
+google-dns (8.8.8.8) port 80 -> CLOSED
+google-dns (8.8.8.8) port 443 -> OPEN
+cloudflare-dns (1.1.1.1) is alive
+cloudflare-dns (1.1.1.1) port 22 -> CLOSED
+cloudflare-dns (1.1.1.1) port 80 -> OPEN
+cloudflare-dns (1.1.1.1) port 443 -> OPEN
+local-router (192.168.1.1) is down
+local-router (192.168.1.1) port 22 -> CLOSED
+local-router (192.168.1.1) port 80 -> CLOSED
+local-router (192.168.1.1) port 443 -> CLOSED
+quad9-dns (9.9.9.9) is alive
+quad9-dns (9.9.9.9) port 22 -> CLOSED
+quad9-dns (9.9.9.9) port 80 -> CLOSED
+quad9-dns (9.9.9.9) port 443 -> OPEN
+google-dns (8.8.8.8) is alive
+google-dns (8.8.8.8) port 22 -> CLOSED
+google-dns (8.8.8.8) port 80 -> CLOSED
+google-dns (8.8.8.8) port 443 -> OPEN
+cloudflare-dns (1.1.1.1) is alive
+cloudflare-dns (1.1.1.1) port 22 -> CLOSED
+cloudflare-dns (1.1.1.1) port 80 -> OPEN
+cloudflare-dns (1.1.1.1) port 443 -> OPEN
+local-router (192.168.1.1) is down
+local-router (192.168.1.1) port 22 -> CLOSED
+local-router (192.168.1.1) port 80 -> CLOSED
+local-router (192.168.1.1) port 443 -> CLOSED
+quad9-dns (9.9.9.9) is alive
+quad9-dns (9.9.9.9) port 22 -> CLOSED
+quad9-dns (9.9.9.9) port 80 -> CLOSED
+quad9-dns (9.9.9.9) port 443 -> OPEN
+google-dns (8.8.8.8) is alive
+google-dns (8.8.8.8) port 22 -> CLOSED
+google-dns (8.8.8.8) port 80 -> CLOSED
+google-dns (8.8.8.8) port 443 -> OPEN
+cloudflare-dns (1.1.1.1) is alive
+cloudflare-dns (1.1.1.1) port 22 -> CLOSED
+cloudflare-dns (1.1.1.1) port 80 -> OPEN
+cloudflare-dns (1.1.1.1) port 443 -> OPEN
+local-router (192.168.1.1) is down
+local-router (192.168.1.1) port 22 -> CLOSED
+local-router (192.168.1.1) port 80 -> CLOSED
+local-router (192.168.1.1) port 443 -> CLOSED
+quad9-dns (9.9.9.9) is alive
+quad9-dns (9.9.9.9) port 22 -> CLOSED
+quad9-dns (9.9.9.9) port 80 -> CLOSED
+quad9-dns (9.9.9.9) port 443 -> OPEN
