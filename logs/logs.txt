@@ -75,3 +75,123 @@ quad9-dns (9.9.9.9) is alive
 quad9-dns (9.9.9.9) port 22 -> CLOSED
 quad9-dns (9.9.9.9) port 80 -> CLOSED
 quad9-dns (9.9.9.9) port 443 -> OPEN
+google-dns (8.8.8.8) is alive
+google-dns (8.8.8.8) port 22 -> CLOSED
+google-dns (8.8.8.8) port 80 -> CLOSED
+google-dns (8.8.8.8) port 443 -> OPEN
+cloudflare-dns (1.1.1.1) is alive
+cloudflare-dns (1.1.1.1) port 22 -> CLOSED
+cloudflare-dns (1.1.1.1) port 80 -> OPEN
+cloudflare-dns (1.1.1.1) port 443 -> OPEN
+local-router (192.168.1.1) is down
+local-router (192.168.1.1) port 22 -> CLOSED
+local-router (192.168.1.1) port 80 -> CLOSED
+local-router (192.168.1.1) port 443 -> CLOSED
+quad9-dns (9.9.9.9) is alive
+quad9-dns (9.9.9.9) port 22 -> CLOSED
+quad9-dns (9.9.9.9) port 80 -> CLOSED
+quad9-dns (9.9.9.9) port 443 -> OPEN
+google-dns (8.8.8.8) is alive
+google-dns (8.8.8.8) port 22 -> CLOSED
+google-dns (8.8.8.8) port 80 -> CLOSED
+google-dns (8.8.8.8) port 443 -> OPEN
+cloudflare-dns (1.1.1.1) is alive
+cloudflare-dns (1.1.1.1) port 22 -> CLOSED
+cloudflare-dns (1.1.1.1) port 80 -> OPEN
+cloudflare-dns (1.1.1.1) port 443 -> OPEN
+local-router (192.168.1.1) is down
+local-router (192.168.1.1) port 22 -> CLOSED
+local-router (192.168.1.1) port 80 -> CLOSED
+local-router (192.168.1.1) port 443 -> CLOSED
+quad9-dns (9.9.9.9) is alive
+quad9-dns (9.9.9.9) port 22 -> CLOSED
+quad9-dns (9.9.9.9) port 80 -> CLOSED
+quad9-dns (9.9.9.9) port 443 -> OPEN
+google-dns (8.8.8.8) is alive
+google-dns (8.8.8.8) port 22 -> CLOSED
+google-dns (8.8.8.8) port 80 -> CLOSED
+google-dns (8.8.8.8) port 443 -> OPEN
+cloudflare-dns (1.1.1.1) is alive
+cloudflare-dns (1.1.1.1) port 22 -> CLOSED
+cloudflare-dns (1.1.1.1) port 80 -> OPEN
+cloudflare-dns (1.1.1.1) port 443 -> OPEN
+local-router (192.168.1.1) is down
+local-router (192.168.1.1) port 22 -> CLOSED
+local-router (192.168.1.1) port 80 -> CLOSED
+local-router (192.168.1.1) port 443 -> CLOSED
+quad9-dns (9.9.9.9) is alive
+quad9-dns (9.9.9.9) port 22 -> CLOSED
+quad9-dns (9.9.9.9) port 80 -> CLOSED
+quad9-dns (9.9.9.9) port 443 -> OPEN
+google-dns (8.8.8.8) is alive
+google-dns (8.8.8.8) port 22 -> CLOSED
+google-dns (8.8.8.8) port 80 -> CLOSED
+google-dns (8.8.8.8) port 443 -> OPEN
+cloudflare-dns (1.1.1.1) is alive
+cloudflare-dns (1.1.1.1) port 22 -> CLOSED
+cloudflare-dns (1.1.1.1) port 80 -> OPEN
+cloudflare-dns (1.1.1.1) port 443 -> OPEN
+local-router (192.168.1.1) is down
+local-router (192.168.1.1) port 22 -> CLOSED
+local-router (192.168.1.1) port 80 -> CLOSED
+local-router (192.168.1.1) port 443 -> CLOSED
+quad9-dns (9.9.9.9) is alive
+quad9-dns (9.9.9.9) port 22 -> CLOSED
+quad9-dns (9.9.9.9) port 80 -> CLOSED
+quad9-dns (9.9.9.9) port 443 -> OPEN
+google-dns (8.8.8.8) is alive
+google-dns (8.8.8.8) port 22 -> CLOSED
+google-dns (8.8.8.8) port 80 -> CLOSED
+google-dns (8.8.8.8) port 443 -> OPEN
+cloudflare-dns (1.1.1.1) is alive
+cloudflare-dns (1.1.1.1) port 22 -> CLOSED
+cloudflare-dns (1.1.1.1) port 80 -> OPEN
+cloudflare-dns (1.1.1.1) port 443 -> OPEN
+local-router (192.168.1.1) is down
+local-router (192.168.1.1) port 22 -> CLOSED
+local-router (192.168.1.1) port 80 -> CLOSED
+local-router (192.168.1.1) port 443 -> CLOSED
+quad9-dns (9.9.9.9) is down
+quad9-dns (9.9.9.9) port 22 -> CLOSED
+quad9-dns (9.9.9.9) port 80 -> CLOSED
+quad9-dns (9.9.9.9) port 443 -> OPEN
+2026-05-05T11:21:31.911530Z [INFO] System initialized
+2026-05-05T11:21:32.013578Z [INFO] google-dns (8.8.8.8) is alive
+2026-05-05T11:21:33.019922Z [DEBUG] google-dns (8.8.8.8) port 22 -> CLOSED
+2026-05-05T11:21:34.029556Z [DEBUG] google-dns (8.8.8.8) port 80 -> CLOSED
+2026-05-05T11:21:34.096577Z [DEBUG] google-dns (8.8.8.8) port 443 -> OPEN
+2026-05-05T11:21:34.171467Z [INFO] cloudflare-dns (1.1.1.1) is alive
+2026-05-05T11:21:35.178460Z [DEBUG] cloudflare-dns (1.1.1.1) port 22 -> CLOSED
+2026-05-05T11:21:35.220617Z [DEBUG] cloudflare-dns (1.1.1.1) port 80 -> OPEN
+2026-05-05T11:21:35.291267Z [DEBUG] cloudflare-dns (1.1.1.1) port 443 -> OPEN
+2026-05-05T11:21:45.331438Z [ERROR] local-router (192.168.1.1) is down
+2026-05-05T11:21:46.336358Z [DEBUG] local-router (192.168.1.1) port 22 -> CLOSED
+2026-05-05T11:21:47.339620Z [DEBUG] local-router (192.168.1.1) port 80 -> CLOSED
+2026-05-05T11:21:48.346594Z [DEBUG] local-router (192.168.1.1) port 443 -> CLOSED
+2026-05-05T11:21:48.397634Z [INFO] quad9-dns (9.9.9.9) is alive
+2026-05-05T11:21:49.406186Z [DEBUG] quad9-dns (9.9.9.9) port 22 -> CLOSED
+2026-05-05T11:21:50.410457Z [DEBUG] quad9-dns (9.9.9.9) port 80 -> CLOSED
+2026-05-05T11:21:50.441721Z [DEBUG] quad9-dns (9.9.9.9) port 443 -> OPEN
+2026-05-07T17:12:16.464601Z [INFO] System initialized
+2026-05-07T17:12:16.472954Z [INFO] Validated 4 devices
+2026-05-07T17:12:16.473747Z [INFO] Loaded 4 devices
+2026-05-07T17:12:16.473949Z [INFO] Checking google-dns (8.8.8.8)
+2026-05-07T17:12:16.574019Z [INFO] google-dns (8.8.8.8) is alive
+2026-05-07T17:12:17.583526Z [DEBUG] google-dns (8.8.8.8) port 22 -> CLOSED
+2026-05-07T17:12:18.590927Z [DEBUG] google-dns (8.8.8.8) port 80 -> CLOSED
+2026-05-07T17:12:18.635937Z [DEBUG] google-dns (8.8.8.8) port 443 -> OPEN
+2026-05-07T17:12:18.637017Z [INFO] Checking cloudflare-dns (1.1.1.1)
+2026-05-07T17:12:18.659605Z [INFO] cloudflare-dns (1.1.1.1) is alive
+2026-05-07T17:12:19.664828Z [DEBUG] cloudflare-dns (1.1.1.1) port 22 -> CLOSED
+2026-05-07T17:12:19.695150Z [DEBUG] cloudflare-dns (1.1.1.1) port 80 -> OPEN
+2026-05-07T17:12:19.716097Z [DEBUG] cloudflare-dns (1.1.1.1) port 443 -> OPEN
+2026-05-07T17:12:19.726156Z [INFO] Checking local-router (192.168.1.1)
+2026-05-07T17:12:29.753940Z [ERROR] local-router (192.168.1.1) is down
+2026-05-07T17:12:30.765133Z [DEBUG] local-router (192.168.1.1) port 22 -> CLOSED
+2026-05-07T17:12:31.802962Z [DEBUG] local-router (192.168.1.1) port 80 -> CLOSED
+2026-05-07T17:12:32.807194Z [DEBUG] local-router (192.168.1.1) port 443 -> CLOSED
+2026-05-07T17:12:32.810153Z [INFO] Checking quad9-dns (9.9.9.9)
+2026-05-07T17:12:32.851028Z [INFO] quad9-dns (9.9.9.9) is alive
+2026-05-07T17:12:33.859644Z [DEBUG] quad9-dns (9.9.9.9) port 22 -> CLOSED
+2026-05-07T17:12:34.882153Z [DEBUG] quad9-dns (9.9.9.9) port 80 -> CLOSED
+2026-05-07T17:12:34.899761Z [DEBUG] quad9-dns (9.9.9.9) port 443 -> OPEN

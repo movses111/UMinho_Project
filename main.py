@@ -1,30 +1,35 @@
-import json
+from monitor.loader import load_devices
 from monitor.ping import ping_host
 from monitor.port_check import check_port
 from monitor.logger import log
 from monitor.anomaly import detect_anomaly
 
-print("=== Network Monitoring System ===")
+log("System initialized", level="INFO")
 
-with open("assets/devices.json") as f:
-    devices = json.load(f)
+devices = load_devices()
 
-print(f"Loaded {len(devices)} devices.\n")
+log(
+    f"Loaded {len(devices)} devices",
+    level="INFO"
+)
 
 previous_latencies = {} # save previous latencies
 
 for device in devices:
-
+    
     alias = device["alias"]
     ip = device["ip"]
     threshold = device["latency_threshold"]
 
-    print(f"Checking {alias} ({ip})")
+    log(
+        f"Checking {alias} ({ip})",
+        level="INFO"
+    )
 
     is_alive, current_latency = ping_host(ip, threshold)
     if is_alive:
-        print("Ping: OK! Latency: {current_latency} ms")
-        log(f"{alias} ({ip}) is alive")
+        print(f"Ping: OK! Latency: {current_latency} ms")
+        log(f"{alias} ({ip}) is alive", level="INFO")
 
         # finding anomalies
         if ip in previous_latencies:
