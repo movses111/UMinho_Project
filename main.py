@@ -41,18 +41,20 @@ for device in devices:
 
 
     else:
+
         print("Ping: FAILED!")
-        log(f"{alias} ({ip}) is down")
-
-    for port in[22, 80, 443]:
-
-        status = check_port(ip, port)
-
-        print(f"Port {port}: {'OPEN' if status else 'CLOSED'}")
-
         log(
-            f"{alias} ({ip}) port {port} -> "
-            f"{'OPEN' if status else 'CLOSED'}"
+            f"{alias} ({ip}) is down",
+            level="ERROR"
         )
 
-    print("-" * 40)
+    for port in[22, 80, 443]:
+        
+        status = check_port(ip, port)
+        
+        log(
+            f"{alias} ({ip}) port {port} -> "
+            f"{'OPEN' if status else 'CLOSED'}",
+            level="DEBUG"
+            )
+            
