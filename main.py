@@ -16,7 +16,7 @@ log(
 previous_latencies = {} # save previous latencies
 
 for device in devices:
-    
+  
     alias = device["alias"]
     ip = device["ip"]
     threshold = device["latency_threshold"]
@@ -29,7 +29,10 @@ for device in devices:
     is_alive, current_latency = ping_host(ip, threshold)
     if is_alive:
         print(f"Ping: OK! Latency: {current_latency} ms")
-        log(f"{alias} ({ip}) is alive", level="INFO")
+        log(
+            f"{alias} ({ip}) is alive",
+            level="INFO"
+        )
 
         # finding anomalies
         if ip in previous_latencies:
@@ -38,11 +41,9 @@ for device in devices:
                 print(anomaly)
                 log(anomaly)
         previous_latencies[ip] = current_latency # save the previous latencies in list
-
-
+        
     else:
-
-        print("Ping: FAILED!")
+        
         log(
             f"{alias} ({ip}) is down",
             level="ERROR"
@@ -56,5 +57,5 @@ for device in devices:
             f"{alias} ({ip}) port {port} -> "
             f"{'OPEN' if status else 'CLOSED'}",
             level="DEBUG"
-            )
+        )
             
