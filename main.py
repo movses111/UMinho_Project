@@ -4,7 +4,9 @@ from monitor.port_check import check_port
 from monitor.logger import log
 from monitor.anomaly import detect_anomaly
 
-log("System initialized", level="INFO")
+log("=" * 50, level="IFNO")
+log("Network Monitoring System Started", level="INFO")
+log("=" *50, level="INFO")
 
 devices = load_devices()
 
@@ -16,7 +18,8 @@ log(
 previous_latencies = {} # save previous latencies
 
 for device in devices:
-  
+    log("." * 40, level="INFO")
+    
     alias = device["alias"]
     ip = device["ip"]
     threshold = device["latency_threshold"]
@@ -26,20 +29,34 @@ for device in devices:
         level="INFO"
     )
 
-    is_alive, current_latency = ping_host(ip, threshold)
+    is_alive, current_latency = ping_host(
+        ip,
+        threshold
+    )
+
     if is_alive:
-        print(f"Ping: OK! Latency: {current_latency} ms")
+
         log(
-            f"{alias} ({ip}) is alive",
+            f"{alias} responded in "
+            f"{current_latency} ms",
             level="INFO"
         )
 
         # finding anomalies
         if ip in previous_latencies:
-            anomaly = detect_anomaly(previous_latencies[ip], current_latency)
+
+            anomaly = detect_anomaly(
+                previous_latencies[ip],
+                current_latency
+            )
+
             if anomaly:
-                print(anomaly)
-                log(anomaly)
+
+                log(
+                    anomaly,
+                    level="WARNING"
+                )
+                
         previous_latencies[ip] = current_latency # save the previous latencies in list
         
     else:
@@ -58,4 +75,3 @@ for device in devices:
             f"{'OPEN' if status else 'CLOSED'}",
             level="DEBUG"
         )
-            
