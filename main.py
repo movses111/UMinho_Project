@@ -6,7 +6,7 @@ from monitor.anomaly import detect_anomaly
 
 log("=" * 50, level="IFNO")
 log("Network Monitoring System Started", level="INFO")
-log("=" *50, level="INFO")
+log("=" * 50, level="INFO")
 
 devices = load_devices()
 
