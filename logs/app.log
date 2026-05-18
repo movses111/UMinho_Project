@@ -1,0 +1,88 @@
+[
+    {
+        "id": 1,
+        "alias": "google-dns",
+        "ip": "8.8.8.8",
+        "check_interval": 10,
+        "latency_threshold": 100
+
+    },
+    {
+       "id": 2,
+        "alias": "cloudflare-dns",
+        "ip": "1.1.1.1",
+        "check_interval": 5,
+        "latency_threshold": 80 
+    },
+    {
+        "id": 3,
+        "alias": "local-router",
+        "ip": "192.168.1.1",
+        "check_interval": 15,
+        "latency_threshold": 30
+    },
+    {
+        "id": 4,
+        "alias": "quad9-dns",
+        "ip": "9.9.9.9",
+        "check_interval": 20,
+        "latency_threshold": 120
+    }
+]2026-05-18T15:03:17.987215Z [IFNO] ==================================================
+2026-05-18T15:03:17.990071Z [INFO] Network Monitoring System Started
+2026-05-18T15:03:17.990317Z [INFO] ==================================================
+2026-05-18T15:03:17.998162Z [INFO] Validated 4 devices
+2026-05-18T15:03:18.001957Z [INFO] Loaded 4 devices
+2026-05-18T15:03:18.002852Z [INFO] ........................................
+2026-05-18T15:03:18.003118Z [INFO] Checking google-dns (8.8.8.8)
+2026-05-18T15:03:18.363191Z [ERROR] google-dns (8.8.8.8) is down
+2026-05-18T15:03:19.395627Z [DEBUG] google-dns (8.8.8.8) port 22 -> CLOSED
+2026-05-18T15:03:20.400060Z [DEBUG] google-dns (8.8.8.8) port 80 -> CLOSED
+2026-05-18T15:03:20.459169Z [DEBUG] google-dns (8.8.8.8) port 443 -> OPEN
+2026-05-18T15:03:20.460130Z [INFO] ........................................
+2026-05-18T15:03:20.462804Z [INFO] Checking cloudflare-dns (1.1.1.1)
+2026-05-18T15:03:20.507104Z [INFO] cloudflare-dns responded in 16.2 ms
+2026-05-18T15:03:21.515897Z [DEBUG] cloudflare-dns (1.1.1.1) port 22 -> CLOSED
+2026-05-18T15:03:21.532813Z [DEBUG] cloudflare-dns (1.1.1.1) port 80 -> OPEN
+2026-05-18T15:03:21.552378Z [DEBUG] cloudflare-dns (1.1.1.1) port 443 -> OPEN
+2026-05-18T15:03:21.553484Z [INFO] ........................................
+2026-05-18T15:03:21.554795Z [INFO] Checking local-router (192.168.1.1)
+2026-05-18T15:03:31.617668Z [ERROR] local-router (192.168.1.1) is down
+2026-05-18T15:03:32.624959Z [DEBUG] local-router (192.168.1.1) port 22 -> CLOSED
+2026-05-18T15:03:33.650563Z [DEBUG] local-router (192.168.1.1) port 80 -> CLOSED
+2026-05-18T15:03:34.656693Z [DEBUG] local-router (192.168.1.1) port 443 -> CLOSED
+2026-05-18T15:03:34.657014Z [INFO] ........................................
+2026-05-18T15:03:34.661250Z [INFO] Checking quad9-dns (9.9.9.9)
+2026-05-18T15:03:34.709580Z [INFO] quad9-dns responded in 23.5 ms
+2026-05-18T15:03:35.718944Z [DEBUG] quad9-dns (9.9.9.9) port 22 -> CLOSED
+2026-05-18T15:03:36.735699Z [DEBUG] quad9-dns (9.9.9.9) port 80 -> CLOSED
+2026-05-18T15:03:36.752715Z [DEBUG] quad9-dns (9.9.9.9) port 443 -> OPEN
+2026-05-18T15:07:26.101941Z [IFNO] ==================================================
+2026-05-18T15:07:26.102893Z [INFO] Network Monitoring System Started
+2026-05-18T15:07:26.103183Z [INFO] ==================================================
+2026-05-18T15:07:26.104223Z [INFO] Validated 4 devices
+2026-05-18T15:07:26.104784Z [INFO] Loaded 4 devices
+2026-05-18T15:07:26.105162Z [INFO] ........................................
+2026-05-18T15:07:26.105998Z [INFO] Checking google-dns (8.8.8.8)
+2026-05-18T15:07:26.185119Z [INFO] google-dns responded in 56.2 ms
+2026-05-18T15:07:27.192000Z [DEBUG] google-dns (8.8.8.8) port 22 -> CLOSED
+2026-05-18T15:07:28.209827Z [DEBUG] google-dns (8.8.8.8) port 80 -> CLOSED
+2026-05-18T15:07:28.266069Z [DEBUG] google-dns (8.8.8.8) port 443 -> OPEN
+2026-05-18T15:07:28.269192Z [INFO] ........................................
+2026-05-18T15:07:28.269387Z [INFO] Checking cloudflare-dns (1.1.1.1)
+2026-05-18T15:07:28.459060Z [INFO] cloudflare-dns responded in 71.9 ms
+2026-05-18T15:07:29.472781Z [DEBUG] cloudflare-dns (1.1.1.1) port 22 -> CLOSED
+2026-05-18T15:07:29.542871Z [DEBUG] cloudflare-dns (1.1.1.1) port 80 -> OPEN
+2026-05-18T15:07:29.590183Z [DEBUG] cloudflare-dns (1.1.1.1) port 443 -> OPEN
+2026-05-18T15:07:29.591051Z [INFO] ........................................
+2026-05-18T15:07:29.595989Z [INFO] Checking local-router (192.168.1.1)
+2026-05-18T15:07:39.727698Z [ERROR] local-router (192.168.1.1) is down
+2026-05-18T15:07:40.736125Z [DEBUG] local-router (192.168.1.1) port 22 -> CLOSED
+2026-05-18T15:07:41.755679Z [DEBUG] local-router (192.168.1.1) port 80 -> CLOSED
+2026-05-18T15:07:42.763630Z [DEBUG] local-router (192.168.1.1) port 443 -> CLOSED
+2026-05-18T15:07:42.764917Z [INFO] ........................................
+2026-05-18T15:07:42.766147Z [INFO] Checking quad9-dns (9.9.9.9)
+2026-05-18T15:07:42.801003Z [INFO] quad9-dns responded in 13.9 ms
+2026-05-18T15:07:43.806106Z [DEBUG] quad9-dns (9.9.9.9) port 22 -> CLOSED
+2026-05-18T15:07:44.811759Z [DEBUG] quad9-dns (9.9.9.9) port 80 -> CLOSED
+2026-05-18T15:07:44.848885Z [DEBUG] quad9-dns (9.9.9.9) port 443 -> OPEN

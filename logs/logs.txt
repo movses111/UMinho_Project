@@ -322,3 +322,32 @@ quad9-dns (9.9.9.9) port 443 -> OPEN
 2026-05-14T15:33:36.247232Z [DEBUG] quad9-dns (9.9.9.9) port 22 -> CLOSED
 2026-05-14T15:33:37.258519Z [DEBUG] quad9-dns (9.9.9.9) port 80 -> CLOSED
 2026-05-14T15:33:37.284679Z [DEBUG] quad9-dns (9.9.9.9) port 443 -> OPEN
+2026-05-18T14:38:39.465018Z [IFNO] ==================================================
+2026-05-18T14:38:39.470898Z [INFO] Network Monitoring System Started
+2026-05-18T14:38:39.479048Z [INFO] ==================================================
+2026-05-18T14:38:39.483340Z [INFO] Validated 4 devices
+2026-05-18T14:38:39.491023Z [INFO] Loaded 4 devices
+2026-05-18T14:38:39.493320Z [INFO] ........................................
+2026-05-18T14:38:39.496430Z [INFO] Checking google-dns (8.8.8.8)
+2026-05-18T14:38:39.610155Z [INFO] google-dns responded in 42.6 ms
+2026-05-18T14:38:40.635008Z [DEBUG] google-dns (8.8.8.8) port 22 -> CLOSED
+2026-05-18T14:38:41.638254Z [DEBUG] google-dns (8.8.8.8) port 80 -> CLOSED
+2026-05-18T14:38:41.686482Z [DEBUG] google-dns (8.8.8.8) port 443 -> OPEN
+2026-05-18T14:38:41.699919Z [INFO] ........................................
+2026-05-18T14:38:41.701095Z [INFO] Checking cloudflare-dns (1.1.1.1)
+2026-05-18T14:38:41.799105Z [INFO] cloudflare-dns responded in 11.3 ms
+2026-05-18T14:38:42.809097Z [DEBUG] cloudflare-dns (1.1.1.1) port 22 -> CLOSED
+2026-05-18T14:38:42.848236Z [DEBUG] cloudflare-dns (1.1.1.1) port 80 -> OPEN
+2026-05-18T14:38:42.878958Z [DEBUG] cloudflare-dns (1.1.1.1) port 443 -> OPEN
+2026-05-18T14:38:42.879264Z [INFO] ........................................
+2026-05-18T14:38:42.884901Z [INFO] Checking local-router (192.168.1.1)
+2026-05-18T14:38:52.920064Z [ERROR] local-router (192.168.1.1) is down
+2026-05-18T14:38:53.926995Z [DEBUG] local-router (192.168.1.1) port 22 -> CLOSED
+2026-05-18T14:38:54.931397Z [DEBUG] local-router (192.168.1.1) port 80 -> CLOSED
+2026-05-18T14:38:55.934026Z [DEBUG] local-router (192.168.1.1) port 443 -> CLOSED
+2026-05-18T14:38:55.937946Z [INFO] ........................................
+2026-05-18T14:38:55.938120Z [INFO] Checking quad9-dns (9.9.9.9)
+2026-05-18T14:38:56.021069Z [INFO] quad9-dns responded in 9.25 ms
+2026-05-18T14:38:57.030852Z [DEBUG] quad9-dns (9.9.9.9) port 22 -> CLOSED
+2026-05-18T14:38:58.046034Z [DEBUG] quad9-dns (9.9.9.9) port 80 -> CLOSED
+2026-05-18T14:38:58.074054Z [DEBUG] quad9-dns (9.9.9.9) port 443 -> OPEN

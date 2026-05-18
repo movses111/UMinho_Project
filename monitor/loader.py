@@ -24,24 +24,73 @@ def load_devices():
         with open(CONFIG_PATH) as f:
             devices = json.load(f)
 
-    except json.JSONDecodeError:
+    except FileNotFoundError:
 
         log(
-            "Invalid JSON format",
+            "Configuration file missing",
+            level="ERROR"
+        )
+
+        return [] 
+
+    except json.JSONDecodeError as error:
+
+        log(
+            "Invalid JSON format: {error}",
+            level="ERROR"
+        )
+
+        return []
+    
+    except PermissionError:
+
+        log(
+            "Permission denied while "
+            "reading devices.json",
+            level="ERROR"
+        )
+
+        return []
+    
+    except Exception as error:
+
+        log(
+            f"Unexpected loader error: "
+            f"{error}",
             level="ERROR"
         )
 
         return []
 
+
     validated_devices = []
 
     for device in devices:
 
-        if validate_device(device):
-            validated_devices.append(device)
+        try:
+
+            if validate_device(device):
+                validated_devices.append(device)
+
+        except KeyError as error:
+
+            log(
+                f"Missing device ket: "
+                f"{error}",
+                level="WARNING"
+            )
+
+        except Exception as error:
+
+            log(
+                f"Device validation error: "
+                f"{error}",
+                level="WARNING"
+            )
             
     log(
-        f"Validated {len(validated_devices)} devices",
+        f"Validated "
+        f"{len(validated_devices)} devices",
         level="INFO"
     )
 
