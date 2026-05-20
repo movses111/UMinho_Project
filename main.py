@@ -4,9 +4,9 @@ from monitor.port_check import check_port
 from monitor.logger import log
 from monitor.anomaly import detect_anomaly
 
-log("=" * 50, level="IFNO")
-log("Network Monitoring System Started", level="INFO")
-log("=" * 50, level="INFO")
+log("=" * 60, level="IFNO")
+log("Monitoring Session Started", level="INFO")
+log("=" * 60, level="INFO")
 
 devices = load_devices()
 
@@ -37,7 +37,8 @@ for device in devices:
     if is_alive:
 
         log(
-            f"{alias} responded in "
+            f"Device {alias} "
+            f"{ip} responded in "
             f"{current_latency} ms",
             level="INFO"
         )
@@ -71,7 +72,14 @@ for device in devices:
         status = check_port(ip, port)
         
         log(
-            f"{alias} ({ip}) port {port} -> "
+            f"Port check "
+            f"{alias} ({ip}) "
+            f"port {port} -> "
             f"{'OPEN' if status else 'CLOSED'}",
             level="DEBUG"
+        )
+
+        log(
+            "Monitoring cycle completed",
+            level="INFO"
         )
